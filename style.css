@@ -1,0 +1,86 @@
+
+*{
+    font-family: sans-serif;
+} 
+
+body{
+    background-color: #dfdfdf;
+    width: 40em;
+    margin: auto;
+ 
+}
+
+.inserirTarefa, .adicionarTarefa{
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 1.8em;
+}
+#tipo, #titulo{
+    border: 1px solid #dfdfdf;
+    padding: 10px;
+    width: 17em;
+}
+.inserirTarefa, .adicionarTarefa h4{
+    font-weight: normal;
+ 
+}
+
+.containerButton{
+    display: flex;
+    justify-content: center;
+}
+.btnAdicionarTarefa{
+    margin-top: 10px;
+    background: #2d9115;
+    color: #fff;
+    border: oldlace;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+#list{
+    list-style: none;
+    padding: 0;
+}
+.task{
+    background: #dfdfdf;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+#tarefas div{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.wrapperFilter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapperFilter button{
+    position: absolute;
+    right: 36%;
+    border: 0;
+    background: white;
+    color: #000;
+}
+#filter{
+    width: 100%;
+    position: relative;
+    height: 1.3rem;
+    border: 1px solid #b3b3b3;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.btnExcluir{
+    background: #ff002d;
+    border: 0px;
+    border-radius: 2px;
+    padding: 5px;
+    color: white;
+}

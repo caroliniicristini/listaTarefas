@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  
+    <div class="inserirTarefa">
+      
+        <h4>Insira sua tarefa</h4>
+    
+        <input type="text" id="titulo" placeholder="Digite o título da sua tarefa">
+
+        <select id="tipo">
+            <option value="" disabled selected hidden>Selecione o tipo</option>
+            <option value="urgente">Urgente</option>
+            <option value="prioritario">Prioritario</option>
+            <option value="normal">Normal</option>
+        </select>
+
+        <div class="containerButton">
+            <button type="button" onclick="addTask()" class="btnAdicionarTarefa">Adicionar Tarefa</button>
+        </div>
+     
+    </div>
+    <div class="adicionarTarefa">
+        <div class="wrapperFilter">
+        <input type="text" id="filter" placeholder="Digite o título da sua tarefa"></input>
+        <button onclick="search()">Pesquisar</button>
+    </div>
+        <h4>Tarefas</h4>
+      
+            <div id="tarefas"></div>
+            <i class="icofont-trash"></i>
+    
+       
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
